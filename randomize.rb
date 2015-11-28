@@ -1,6 +1,8 @@
+require 'dominion-basic-cards'
+
 class Randomize
 
-  require 'dominion-basic-cards'
+  include DominionBasic
 
   attr_reader :number_of_cards
   attr_accessor :selected_cards
@@ -30,9 +32,5 @@ class Randomize
         end
       end
     end
-  end
-
-  def basic_cards
-    DominionBasic::BASIC_CARDS
   end
 end

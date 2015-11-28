@@ -1,4 +1,4 @@
-class DominionBasic
+module DominionBasic
   BASIC_CARDS = {
     1 => {name: 'Adventurer', type: 'action'},
     2 => {name: 'Bureaucrat', type: ['action', 'attack']},
@@ -25,4 +25,8 @@ class DominionBasic
     23 => {name: 'Woodcutter', type: 'action'},
     24 => {name: 'Workshop', type: 'action'}
   }
+
+  def basic_cards
+    BASIC_CARDS
+  end
 end

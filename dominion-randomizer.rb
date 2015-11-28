@@ -1,9 +1,6 @@
 dominion_path = File.expand_path('../', __FILE__)
 $LOAD_PATH.unshift(dominion_path) unless $LOAD_PATH.include?(dominion_path)
 
-puts "Starting up dominion randomizor"
-puts "Here is your deck:"
-
 class Dominion
 
   require 'dominion-basic-cards'
@@ -42,6 +39,9 @@ class Dominion
     DominionBasic::BASIC_CARDS
   end
 end
+
+puts "Starting up dominion randomizor"
+puts "Here is your deck:"
 
 Dominion.new
 

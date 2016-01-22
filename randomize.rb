@@ -1,4 +1,4 @@
-require 'dominion-basic-cards'
+require_relative 'dominion-basic-cards'
 
 class Randomize
 
